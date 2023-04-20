@@ -11,12 +11,12 @@ function setup() {
   fill(255);
 }
 
-function mousePressed() {
-  if (mouseX > 0 && mouseX < windowWidth && mouseY > 0 && mouseY < windowHeight) {
-    let fs = fullscreen();
-    fullscreen(!fs);
-  }
-}
+// function mousePressed() {
+//   if (mouseX > 0 && mouseX < windowWidth && mouseY > 0 && mouseY < windowHeight) {
+//     let fs = fullscreen();
+//     fullscreen(!fs);
+//   }
+// }
 
 function draw() {
   background(255, 102, 0);

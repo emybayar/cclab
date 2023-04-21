@@ -1,0 +1,35 @@
+.container {
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  body {
+    background-color: rgb(255, 195, 11);
+    font-family: 'Chivo Mono', monospace;
+  }
+  
+  #nametitle {
+    font-size: 50px;
+    margin-bottom: 2px;
+  }
+  
+  #image1 {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  #image1text {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+  }
+
+  #image1text:hover {
+    color: orangered;
+    transition: color 0.5s ease-in;
+    font-size: 36px;
+    transition: font-size 1s;
+  }

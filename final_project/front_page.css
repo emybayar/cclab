@@ -1,0 +1,229 @@
+/* body {
+    margin: 0;
+  }
+
+ img {
+    width: 100%;
+    height: auto
+ }
+
+ .header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    z-index: 4;
+ }
+
+  h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    color: yellow;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+  }
+
+  .issues {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: yellow;
+    position: absolute;
+    top: 28px;
+    left: 600px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .about {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: yellow;
+    position: absolute;
+    top: 28px;
+    left: -680px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .container {
+    position: relative;
+    height: 100vh;
+    margin-top: 0px;
+  }
+
+  .container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 2;
+  }
+  
+  .container img.active {
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .footnote {
+    position: absolute;
+    top: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 20px;
+    z-index: 3;
+    text-align: center;
+}
+
+ .footnote p {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: yellow;
+    font-weight: bold;
+    column-count: 3;
+    column-gap: 10px;
+}
+
+.contacts {
+    position: absolute;
+    top: 1400px;
+    left: 38%;
+    z-index: 3;
+    text-align: center;
+}
+
+.contacts p {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: yellow;
+}
+
+.contacts a {
+    color: yellow;
+    text-decoration: none;
+} */
+
+/* Use a CSS reset to ensure consistent styling across different browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a maximum width for the page to prevent it from stretching too wide */
+body {
+  max-width: 100%;
+  max-height: 100%;
+  /* margin: 0 auto; */
+}
+
+/* Style the header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  background-color: transparent;
+}
+
+.header h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 5vw;
+  font-weight: bolder;
+  letter-spacing: -2px;
+  color: yellow;
+  z-index: 6;
+}
+
+.header a {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3vw;
+  font-weight: bold;
+  color: yellow;
+  text-decoration: none;
+  margin-right: 20px;
+  z-index: 6;
+}
+
+/* Style the container */
+.container {
+  position: relative;
+  height: 120vh;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 2;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.container img.active {
+  opacity: 1;
+  z-index: 3;
+}
+
+/* Style the footnote */
+.footnote {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 80%;
+  z-index: 4;
+  text-align: center;
+}
+
+.footnote p {
+  font-size: 2.5vw;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: yellow;
+  font-weight: bold;
+  column-count: 3;
+  column-gap: 10px;
+}
+
+/* Style the contacts */
+.contacts {
+  position: absolute;
+  top: 111%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 80%;
+  z-index: 4;
+  text-align: center;
+}
+
+.contacts p {
+  font-size: 1.5vw;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: yellow;
+  margin-bottom: 2%;
+}
+
+.contacts a {
+  color: yellow;
+  text-decoration: none;
+}

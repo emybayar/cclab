@@ -1,0 +1,173 @@
+/* .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .header:hover h1 {
+    color: yellow;
+    transition: color 0.5s ease-in-out;
+  }  
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    color: black;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    text-indent: -55px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .issue01_image {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -250px;
+    max-width: 500px;
+    border: 50px solid yellow;
+    box-sizing: border-box;
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+.issues_page {
+    animation: slide-in 0.5s backwards;
+ }
+
+.available {
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    letter-spacing: -1px;
+    text-align: center;
+    top: 155px;
+    margin-left: 34%;
+ }
+
+   */
+ 
+.issues_page {
+  animation: slide-in 0.5s backwards;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(0%);
+  }
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
+}
+
+.header:hover h1 {
+  color: yellow;
+  transition: color 0.5s ease-in-out;
+}  
+
+a {
+  text-decoration: none;
+}
+.issue01_image {
+  display: block;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  border: 3vw solid yellow;
+  box-sizing: border-box;
+}
+
+
+.available {
+  position: absolute;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1vw;
+  text-align: center;
+  top: 26%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+
+  .header h1 {
+    font-size: 7rem;
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .issue01_image {
+    max-height: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header h1 {
+    font-size: 8rem;
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .issue01_image {
+    max-height: 70%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header h1 {
+    font-size: 6rem;
+  }
+
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .issue01_image {
+    max-height: 70%;
+  }
+}
